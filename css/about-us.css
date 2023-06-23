@@ -1,0 +1,87 @@
+/* Defines styles for the body of the document such as background color, font color, font family, margin, and padding */
+body {
+    background-color: #f3f5f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Defines styles for the navigation bar such as background color, padding, positioning, width, z-index, box shadow, and text alignment */
+.navbar {
+    background-color: #f3f5f8;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Removes list styling for unordered lists within the navigation bar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles list items within the navigation bar to be displayed inline with margin */
+.navbar li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Styles anchor links within the navigation bar to remove text decoration, set color, padding, and border, and apply a transition effect on the border color */
+.navbar a {
+    text-decoration: none;
+    color: #333333;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+/* Styles hover state of anchor links within the navigation bar to change the border color */
+.navbar a:hover {
+    border-color: #6c8ebf;
+}
+
+/* Styles the container to display its children as flex items, set the maximum width, margin, padding, and manage the wrapping of the children */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles the main content area with a background color, padding, rounded corners, box shadow, color, bottom margin, and a transition effect on the background color and color */
+.main {
+    flex: 1;
+    background-color: #d4e4f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #333333;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styles the header to center the text, set the color, and provide bottom margin and a transition effect on the color */
+.header {
+    text-align: center;
+    color: #6c8ebf;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Styles paragraphs with a specific font size, line height, and color */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333333;
+}
+
