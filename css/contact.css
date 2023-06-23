@@ -1,0 +1,120 @@
+/* Styling for the entire webpage. */
+body {
+    background-color: #f3f5f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the navigation bar. */
+.navbar {
+    background-color: #f3f5f8;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Removing list style for unordered list in navigation bar. */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for list items in navigation bar. */
+.navbar li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Styling for anchor tags in navigation bar. */
+.navbar a {
+    text-decoration: none;
+    color: #333333;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect for anchor tags in navigation bar. */
+.navbar a:hover {
+    border-color: #6c8ebf;
+}
+
+/* Styling for the main content container. */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d4e4f7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for headers. */
+.header {
+    text-align: center;
+    color: #6c8ebf;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Styling for paragraphs. */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333333;
+    text-align: center;
+}
+
+/* Styling for forms. */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Styling for labels. */
+label {
+    margin: 10px 0 5px 0;
+    color: #333333;
+}
+
+/* Styling for text and email inputs, and textareas. */
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333333;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Styling for submit buttons. */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #6c8ebf;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for submit buttons. */
+button[type="submit"]:hover {
+    background-color: #5478a3;
+}

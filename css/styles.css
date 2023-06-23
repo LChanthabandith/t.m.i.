@@ -1,0 +1,229 @@
+/* Basic body styling */
+body {
+    background-color: #f3f5f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content wrapper */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main content area */
+.main {
+    flex: 1;
+    background-color: #d4e4f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #333333;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #f3f5f8;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for unordered list in navigation bar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for list items in navigation bar */
+.navbar li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Styling for anchor tags in navigation bar */
+.navbar a {
+    text-decoration: none;
+    color: #333333;
+    padding: 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect for anchor tags in navigation bar */
+.navbar a:hover {
+    border-color: #6c8ebf;
+}
+
+/* Sidebar section */
+.sidebar {
+    flex: 1;
+    background-color: #d4e4f7;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    color: #6c8ebf;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Date and Time styling */
+#dateTime {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6c8ebf;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* Input field container styling */
+.inputField {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling for various inputs */
+#new-task,
+#new-project,
+#new-description,
+#new-due-date,
+#new-reminder {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling for add-task button */
+#add-task {
+    padding: 10px 20px;
+    background-color: #6c8ebf;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for task list containers */
+#uncompleted-task-list,
+#completed-task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for individual tasks in list */
+#uncompleted-task-list li,
+#completed-task-list li {
+    background-color: #ffffff;
+    color: #6c8ebf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for task images */
+#uncompleted-task-list li img,
+#completed-task-list li img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* Styling for task title span */
+#uncompleted-task-list li span,
+#completed-task-list li span {
+    flex-grow: 1;
+}
+
+/* Styling for task buttons */
+#uncompleted-task-list li button,
+#completed-task-list li button {
+    background-color: #6c8ebf;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Chart section styling */
+.chart-section {
+    flex: 1;
+    background-color: #d4e4f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #333333;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for h2 headers in chart sections */
+.chart-section h2 {
+    text-align: center;
+    color: #6c8ebf;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Chart container styling */
+#task-chart-container,
+#project-chart-container {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* Due date and reminder text styling */
+.due-date-text,
+.reminder-text {
+    margin-top: 10px;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
