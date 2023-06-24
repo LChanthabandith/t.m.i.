@@ -228,6 +228,12 @@ function getProjectCounts() {
     return projectCounts;
 }
 
+// Function to get the user's date-time
+function getUserLocalDateTime() {
+  const userDateTime = new Date();
+  return userDateTime.toLocaleString();
+}
+
 // Function to update project task count chart
 function updateProjectChart() {
     let projectCounts = getProjectCounts();
