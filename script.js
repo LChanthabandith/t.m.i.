@@ -278,3 +278,21 @@ function updateProjectChart() {
         });
     }
 }
+
+// Get the current local time and date
+function getCurrentDateTime() {
+    const now = new Date();
+    return now.toLocaleString();
+}
+
+// Update the element with the current local time and date
+function updateLocalTime() {
+    const localTimeElement = document.getElementById("local-time");
+    if (localTimeElement) {
+        localTimeElement.textContent = getCurrentDateTime();
+    }
+}
+
+// Call the updateLocalTime function initially and every second
+updateLocalTime();
+setInterval(updateLocalTime, 1000);

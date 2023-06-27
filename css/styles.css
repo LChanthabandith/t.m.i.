@@ -227,3 +227,22 @@ body {
         transform: translateY(0);
     }
 }
+
+/* Date and Time styling */
+#dateTime {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6c8ebf;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+/* Update the local-time element to match the theme */
+#local-time {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6c8ebf;
+    text-align: center;
+    transition: color 0.3s ease;
+}
